@@ -8,7 +8,7 @@
   </parent>
   <groupId>ayurinsky</groupId>
   <artifactId>jdirectory-lib</artifactId>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
   <version>1.0</version>
   <name>JDirectory library</name>
   <dependencies></dependencies>
