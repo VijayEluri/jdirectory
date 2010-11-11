@@ -11,6 +11,7 @@ public interface DirectoryScanner {
      * Scans current directory or archive for items.
      *
      * @return An array of directory's items.
+     * @throws DirectoryScanException If directory scan has been failed.
      */
-    String[] scan();
+    String[] scan() throws DirectoryScanException;
 }

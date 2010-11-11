@@ -20,7 +20,7 @@ public class DefaultDirectoryScanner extends AbstractDirectoryScanner {
      * {@inheritDoc}
      */
     @Override
-    public String[] scan() {
+    public String[] scan() throws DirectoryScanException {
         return new String[0];
     }
 }
