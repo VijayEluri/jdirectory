@@ -1,30 +1,8 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
           xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.1">
-    <jsp:directive.page import="jdirectory.core.DirectoryScannerFactory"/>
     <jsp:directive.page contentType="text/html; charset=UTF-8"/>
     <html xmlns="http://www.w3.org/1999/xhtml">
         <body>
-            <jsp:scriptlet>
-                <![CDATA[
-                request.setAttribute("itemsList", DirectoryScannerFactory.getInstance()
-                        .getScanner("e:/", "/UMLet").scan());
-                ]]>
-            </jsp:scriptlet>
-            <jsp:useBean id="itemsList" type="java.lang.String[]" scope="request"/>
-            <c:forEach var="item" items="${itemsList}">
-                <c:out value="${item}"/><br/>
-            </c:forEach>
-            <br/>
-            <jsp:scriptlet>
-                <![CDATA[
-                request.setAttribute("zipItemsList", DirectoryScannerFactory.getInstance()
-                        .getScanner("e:/", "/umlet_10_4.zip!UMLet").scan());
-                ]]>
-            </jsp:scriptlet>
-            <jsp:useBean id="zipItemsList" type="java.lang.String[]" scope="request"/>
-            <c:forEach var="item2" items="${zipItemsList}">
-                <c:out value="${item2}"/><br/>
-            </c:forEach>
         </body>
     </html>
 </jsp:root>

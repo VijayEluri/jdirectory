@@ -1,7 +1,7 @@
 package jdirectory.core;
 
 /**
- * Indicates that an error has been encountered while scanning a directory for items.
+ * Indicates that an error has encountered while scanning a directory for items.
  * 
  * @author Alexander Yurinsky
  */

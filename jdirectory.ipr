@@ -22,6 +22,7 @@
             <element id="archive" name="jdirectory-lib-1.0.jar">
               <element id="module-output" name="jdirectory-lib" />
             </element>
+            <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1" />
             <element id="library" level="project" name="Maven: junit:junit:4.8.1" />
             <element id="library" level="project" name="Maven: log4j:log4j:1.2.14" />
             <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
@@ -308,6 +309,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.1.2/jstl-1.1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.googlecode.json-simple:json-simple:1.1">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

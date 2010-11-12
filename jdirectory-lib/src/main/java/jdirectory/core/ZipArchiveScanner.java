@@ -27,13 +27,13 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
      */
     public ZipArchiveScanner(String rootDirectoryPath, String archivePath, String localPath) {
         super(rootDirectoryPath, localPath);
-        File archiveFile = new File(archivePath);
+        File archiveFile = new File(rootDirectory, archivePath);
         if (!archiveFile.exists() || !archiveFile.isFile()) {
             throw new IllegalArgumentException("Provided path to archive does not really " +
-                    "point to a ZIP archive");
+                    "point to a ZIP archive: " + archiveFile.getAbsolutePath());
         }
         this.archiveFile = archiveFile;
-        char lastChar = this.localPath.charAt(this.localPath.length() - 1);
+        char lastChar = this.localPath.length() > 0 ? this.localPath.charAt(this.localPath.length() - 1) : 0;
         if (lastChar == '/' || lastChar == '\\') {
             this.localPath = this.localPath.substring(0, this.localPath.length() - 1);
         }
@@ -57,7 +57,8 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
                 }
                 if (entryName.startsWith(localPath) && !entryName.equals(localPath)
                         && entryName.indexOf('/', localPath.length() + 1) < 0) {
-                    result.add(entryName.substring(localPath.length() + 1, entryName.length()));
+                    result.add(localPath.length() > 0
+                            ? entryName.substring(localPath.length() + 1, entryName.length()) : entryName);
                 }
             }
             return result.toArray(new String[result.size()]);

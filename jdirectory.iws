@@ -60,37 +60,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DirectoryScanner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScanner.java">
+      <file leaf-file-name="JDirectoryServletTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/JDirectoryServletTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectoryScannerFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScannerFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlainDirectoryScanner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/PlainDirectoryScanner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="109" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZipArchiveScanner.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/ZipArchiveScanner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="46" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.38">
+            <state line="48" column="49" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.34963325">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,46 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectoryScanException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScanException.java">
+      <file leaf-file-name="ZipArchiveScanner.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/ZipArchiveScanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="58" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractDirectoryScanner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/AbstractDirectoryScanner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="19" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jspx" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-web/src/main/webapp/index.jspx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="60" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-14.074074">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="31" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-web/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="26" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
+            <state line="53" column="67" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -153,20 +90,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jdirectory-lib/pom.xml" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/servlets/JDirectoryServlet.java" />
-        <option value="$PROJECT_DIR$/jdirectory-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScannerFactory.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScanException.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScanner.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DefaultDirectoryScanner.java" />
-        <option value="$PROJECT_DIR$/jdirectory-web/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/jdirectory-web/pom.xml" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/AbstractDirectoryScanner.java" />
         <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/PlainDirectoryScanner.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/pom.xml" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/ConversionException.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScanException.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/actions/ActionException.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/beans/JDirectoryRequestBean.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeResponse.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeRequest.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/Constants.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/servlets/JDirectoryServlet.java" />
         <option value="$PROJECT_DIR$/jdirectory-web/src/main/webapp/index.jspx" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/beans/JDirectoryResponseBean.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/Converter.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/actions/JDirectoryAction.java" />
         <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/ZipArchiveScanner.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/JDirectoryServletTest.java" />
       </list>
     </option>
   </component>
@@ -215,6 +154,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Favorites" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,98 +185,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory-web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jdirectory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="jdirectory-lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -354,6 +204,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory-lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -409,7 +293,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servlets" />
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory-lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,9 +363,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,10 +377,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Remote.Unnamed">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="jdirectory.actions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.JDirectoryTest">
     <configuration default="true" type="PhpRunConfigurationType" factoryName="PHP">
       <method>
         <option name="AntTarget" enabled="false" />
@@ -615,6 +532,35 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="false" name="JDirectoryTest" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="snapshooter" />
+      <module name="jdirectory-lib" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="jdirectory.test" />
+      <option name="MAIN_CLASS_NAME" value="jdirectory.test.JDirectoryServletTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61383" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="false" name="Unnamed" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -629,8 +575,9 @@
       <ConfigurationWrapper RunnerId="Debug" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Remote.Unnamed" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.JDirectoryTest" />
+      <item index="1" class="java.lang.String" itemvalue="Remote.Unnamed" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -674,6 +621,7 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289941" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -681,7 +629,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2504065" sideWeight="0.591716" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57988167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -724,121 +672,182 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jdirectory-web/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/ServletOutputStream.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="58" selection-start="560" selection-end="560" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/lang/Exception.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="21" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.40625">
+        <state line="11" column="35" selection-start="464" selection-end="464" vertical-scroll-proportion="0.1261498">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScanner.java">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
+        <state line="15" column="20" selection-start="372" selection-end="372" vertical-scroll-proportion="0.35625">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="189" column="47" selection-start="3516" selection-end="3516" vertical-scroll-proportion="4.48875">
+          <folding>
+            <marker date="1289594015663" expanded="true" signature="33:438" placeholder="..." />
+            <element signature="imports" expanded="true" />
+            <marker date="1289594015663" expanded="true" signature="440:531" placeholder="/**...*/" />
+            <marker date="1289594015663" expanded="true" signature="635:663" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="712:749" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="805:830" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="884:991" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="1051:1158" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="1214:1321" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="1375:1479" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="1525:1632" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="1680:1787" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="1841:1948" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="1999:2106" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="2157:2264" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="2314:2421" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="2479:2587" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="2643:2750" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="2808:2915" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="2965:3072" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="3128:3235" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="3286:3393" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="3454:3561" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="3613:3720" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="3783:3891" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="3959:4067" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="4132:4240" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="4305:4413" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="4470:4577" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="4636:4743" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="4800:4907" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="5006:5099" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="5149:5253" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="5304:5411" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="5493:5600" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="5657:5764" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="5823:5930" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="5995:6111" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="6160:6267" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="6315:6422" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="6468:6575" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="6625:6732" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="6779:6883" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="6956:7063" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="7113:7220" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="7270:7377" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="7442:7535" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="7593:7686" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="7732:7839" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="7891:7998" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="8044:8152" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="8228:8335" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="8391:8498" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="8545:8649" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="8698:8805" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="8854:8961" placeholder="{...}" />
+            <marker date="1289594015663" expanded="true" signature="9007:9111" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="50" selection-start="188" selection-end="188" vertical-scroll-proportion="0.21375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DefaultDirectoryScanner.java">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/beans/JDirectoryRequestBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="577" selection-end="577" vertical-scroll-proportion="0.45125">
+        <state line="15" column="49" selection-start="444" selection-end="444" vertical-scroll-proportion="0.34841076">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/net/URL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="796" column="18" selection-start="29279" selection-end="29279" vertical-scroll-proportion="2.5391197">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/util/zip/ZipFile.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/javax/servlet/http/HttpServlet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="398" column="31" selection-start="13188" selection-end="13188" vertical-scroll-proportion="0.3325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScanException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/taglibs/standard/1.1.2/standard-1.1.2.jar!/META-INF/c.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="2" selection-start="4754" selection-end="4754" vertical-scroll-proportion="0.3325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/jsp/lib/jsp-impl.jar!/standardSchemas/jspxml2_1.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="2" selection-start="1915" selection-end="1915" vertical-scroll-proportion="0.3325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="31" selection-start="2387" selection-end="2387" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="26" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScannerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="871" selection-end="871" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1417" column="39" selection-start="54805" selection-end="54805" vertical-scroll-proportion="0.3318182">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/PlainDirectoryScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="109" selection-start="863" selection-end="863" vertical-scroll-proportion="0.0">
+        <state line="43" column="1" selection-start="3219" selection-end="3219" vertical-scroll-proportion="0.59574467">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jdirectory-web/src/main/webapp/index.jspx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="60" selection-start="1010" selection-end="1010" vertical-scroll-proportion="-14.074074">
+        <state line="1" column="68" selection-start="119" selection-end="119" vertical-scroll-proportion="-0.7037037">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/beans/JDirectoryResponseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="41" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="40" selection-start="2126" selection-end="2126" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/servlets/JDirectoryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="46" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/actions/JDirectoryAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="31" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/AbstractDirectoryScanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+        <state line="31" column="22" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScannerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="39" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/ZipArchiveScanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="46" selection-start="1367" selection-end="1367" vertical-scroll-proportion="0.38">
+        <state line="53" column="67" selection-start="2043" selection-end="2043" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/JDirectoryServletTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="49" selection-start="1647" selection-end="1647" vertical-scroll-proportion="0.34963325">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
