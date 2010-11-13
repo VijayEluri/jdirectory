@@ -1,5 +1,7 @@
 package jdirectory.test;
 
+import jdirectory.util.Constants;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.Servlet;
 import javax.servlet.ServletContext;
@@ -8,8 +10,6 @@ import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 
 /**
@@ -18,7 +18,8 @@ import java.util.Set;
  * @author Alexander Yurinsky
  */
 public class FakeServletContext implements ServletContext {
-    private Map<String, Object> context = new HashMap<String,  Object> ();
+    private String rootDirectoryPath = Thread.currentThread().getContextClassLoader()
+            .getResource("testDirectory").getFile();
     
     @Override
     public String getContextPath() {
@@ -111,8 +112,8 @@ public class FakeServletContext implements ServletContext {
     }
 
     @Override
-    public String getInitParameter(String s) {
-        return null;
+    public String getInitParameter(String name) {
+        return name.equals(Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER) ? rootDirectoryPath : null;
     }
 
     @Override
@@ -122,7 +123,7 @@ public class FakeServletContext implements ServletContext {
 
     @Override
     public Object getAttribute(String name) {
-        return context.get(name);
+        return null;
     }
 
     @Override
@@ -131,14 +132,10 @@ public class FakeServletContext implements ServletContext {
     }
 
     @Override
-    public void setAttribute(String name, Object o) {
-        context.put(name, o);
-    }
+    public void setAttribute(String name, Object o) {}
 
     @Override
-    public void removeAttribute(String s) {
-      
-    }
+    public void removeAttribute(String s) {}
 
     @Override
     public String getServletContextName() {

@@ -23,6 +23,7 @@
               <element id="module-output" name="jdirectory-lib" />
             </element>
             <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1" />
+            <element id="library" level="project" name="Maven: velocity:velocity-dep:1.4" />
             <element id="library" level="project" name="Maven: junit:junit:4.8.1" />
             <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
             <element id="library" level="project" name="Maven: javax.servlet:jstl:1.1.2" />
@@ -238,6 +239,13 @@
       </item>
     </group>
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="cat">
+      <words>
+        <w>postfix</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jdirectory.iml" filepath="$PROJECT_DIR$/jdirectory.iml" />
@@ -331,6 +339,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.1.2/jstl-1.1.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: velocity:velocity-dep:1.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity/velocity-dep/1.4/velocity-dep-1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity/velocity-dep/1.4/velocity-dep-1.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/velocity/velocity-dep/1.4/velocity-dep-1.4-sources.jar!/" />
       </SOURCES>
     </library>
   </component>

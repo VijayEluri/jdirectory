@@ -24,12 +24,12 @@ public class JDirectoryServlet extends HttpServlet {
      */
     @Override
     public void init() throws ServletException {
-        String initParameter = getServletConfig().getInitParameter(Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER);
+        String initParameter = getServletContext().getInitParameter(Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER);
         if (initParameter == null) {
             throw new ServletException("Root directory initialization parameter must be set: " +
                     Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER);
         }
-        getServletContext().setAttribute(Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER, initParameter);
+
     }
 
     /**
@@ -42,7 +42,7 @@ public class JDirectoryServlet extends HttpServlet {
         try {
             JDirectoryRequestBean requestBean = Converter.getInstance()
                     .populateRequestBean(JDirectoryRequestBean.class, request);
-            requestBean.setRootDirectoryPath((String) getServletContext().getAttribute(
+            requestBean.setRootDirectoryPath(getServletContext().getInitParameter(
                     Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER));
             JDirectoryAction action = new JDirectoryAction();
             JDirectoryResponseBean responseBean = action.perform(requestBean);

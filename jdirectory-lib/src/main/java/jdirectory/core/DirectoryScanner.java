@@ -13,5 +13,5 @@ public interface DirectoryScanner {
      * @return An array of directory's items.
      * @throws DirectoryScanException If directory scan has been failed.
      */
-    String[] scan() throws DirectoryScanException;
+    FilesystemItem[] scan() throws DirectoryScanException;
 }

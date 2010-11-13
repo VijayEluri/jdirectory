@@ -3,6 +3,7 @@ package jdirectory.actions;
 import jdirectory.beans.JDirectoryRequestBean;
 import jdirectory.beans.JDirectoryResponseBean;
 import jdirectory.core.DirectoryScannerFactory;
+import jdirectory.core.FilesystemItem;
 
 import java.text.MessageFormat;
 import java.util.Arrays;
@@ -17,7 +18,7 @@ public class JDirectoryAction {
     public JDirectoryResponseBean perform(JDirectoryRequestBean requestBean) throws ActionException {
         try {
             JDirectoryResponseBean response = new JDirectoryResponseBean();
-            Map<String, List<String>> responseMap = new HashMap<String, List<String>> ();
+            Map<String, List<FilesystemItem>> responseMap = new HashMap<String, List<FilesystemItem>> ();
             for (String localPath : requestBean.getLocalPaths()) {
                 responseMap.put(localPath, Arrays.asList(DirectoryScannerFactory.getInstance()
                         .getScanner(requestBean.getRootDirectoryPath(), localPath).scan()));

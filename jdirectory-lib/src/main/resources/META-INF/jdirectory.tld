@@ -8,8 +8,10 @@
     <short-name>jdirectory-core</short-name>
     <uri>https://github.com/ayurinsky/jdirectory/tags</uri>
 
-    <tag-file>
+    <tag>
+        <description>Generates JDirectory filesystem tree</description>
         <name>tree</name>
-        <path>/META-INF/tags/jdirectory-tree.tag</path>
-    </tag-file>
+        <tag-class>jdirectory.tags.JDirectoryTreeTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
 </taglib>

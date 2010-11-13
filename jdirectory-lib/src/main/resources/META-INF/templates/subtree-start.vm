@@ -1,0 +1,9 @@
+<div>
+    <table>
+        <tbody>
+            <tr>
+                <td><a href="#">+</a></td>
+                <td>$directoryName</td>
+            </tr>
+        </tbody>
+    </table>

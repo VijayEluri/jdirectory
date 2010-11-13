@@ -1,5 +1,7 @@
 package jdirectory.beans;
 
+import jdirectory.core.FilesystemItem;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
@@ -13,13 +15,13 @@ import java.util.Map;
 public class JDirectoryResponseBean implements Serializable {
     private static final long serialVersionUID = 5431045488778777771L;
 
-    private Map<String, List<String>> response;
+    private Map<String, List<FilesystemItem>> response;
 
-    public Map<String, List<String>> getResponse() {
+    public Map<String, List<FilesystemItem>> getResponse() {
         return response;
     }
 
-    public void setResponse(Map<String, List<String>> response) {
+    public void setResponse(Map<String, List<FilesystemItem>> response) {
         this.response = response;
     }
 }

@@ -5,14 +5,14 @@
     <display-name>JDirectory Test Task Application</display-name>
     <servlet>
         <servlet-name>JDirectory Servlet</servlet-name>
-        <servlet-class>jdirectory.servlets.JDirectoryServlet</servlet-class>
-        <init-param>
-            <param-name>jdirectory.root.directory.path</param-name>
-            <param-value>e:/</param-value>
-        </init-param>
+        <servlet-class>jdirectory.servlets.JDirectoryServlet</servlet-class>            
     </servlet>
     <servlet-mapping>
         <servlet-name>JDirectory Servlet</servlet-name>
         <url-pattern>/jdir/*</url-pattern>
     </servlet-mapping>
+    <context-param>
+        <param-name>jdirectory.root.directory.path</param-name>
+        <param-value>e:/</param-value>
+    </context-param>
 </web-app>

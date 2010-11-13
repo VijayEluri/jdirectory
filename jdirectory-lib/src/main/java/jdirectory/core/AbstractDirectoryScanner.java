@@ -9,6 +9,7 @@ import java.io.File;
  * @author Alexander Yurinsky
  */
 public abstract class AbstractDirectoryScanner implements DirectoryScanner {
+    private static final String ZIP_FILE_POSTFIX = ".zip";
     /**
      * Path to the root directory.
      */
@@ -31,5 +32,15 @@ public abstract class AbstractDirectoryScanner implements DirectoryScanner {
         }
         this.rootDirectory = rootDirectory;
         this.localPath = localPath;
+    }
+
+    /**
+     * Determines whether the file is ZIP archive or not.
+     *
+     * @param fileName The name of the file.
+     * @return <code>true</code> If the file is ZIP archive.
+     */
+    protected boolean isZipArchive(String fileName) {
+        return fileName.toLowerCase().endsWith(ZIP_FILE_POSTFIX);
     }
 }

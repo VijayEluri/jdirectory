@@ -17,32 +17,7 @@ import java.util.Enumeration;
  * @author Alexander Yurinsky
  */
 public class SimpleJDirectoryServlet extends JDirectoryServlet {
-    private String rootDirectoryPath = Thread.currentThread().getContextClassLoader()
-            .getResource("testDirectory").getFile();
     private FakeServletContext servletContext = new FakeServletContext();
-    private ServletConfig servletConfig = new ServletConfig() {
-            @Override
-            public String getServletName() {
-                return null;
-            }
-            @Override
-            public ServletContext getServletContext() {
-                return null;
-            }
-            @Override
-            public String getInitParameter(String name) {
-                return name.equals(Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER) ? rootDirectoryPath : null;
-            }
-            @Override
-            public Enumeration getInitParameterNames() {
-                return null;
-            }
-        };
-
-    @Override
-    public ServletConfig getServletConfig() {
-        return servletConfig;
-    }
 
     @Override
     public ServletContext getServletContext() {

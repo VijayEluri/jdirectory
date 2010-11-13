@@ -43,25 +43,28 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
      * {@inheritDoc}
      */
     @Override
-    public String[] scan() throws DirectoryScanException {
-        Set<String> result;
+    public FilesystemItem[] scan() throws DirectoryScanException {
+        Set<FilesystemItem> result;
         ZipFile archive = null;
         try {
             archive = new ZipFile(archiveFile, ZipFile.OPEN_READ);
-            result = new TreeSet<String>();
+            result = new TreeSet<FilesystemItem>();
             Enumeration<? extends ZipEntry> entries = archive.entries();
             for (; entries.hasMoreElements();) {
                 String entryName = entries.nextElement().getName();
-                if (entryName.charAt(entryName.length() - 1) == '/') {
+                if (isDirectory(entryName)) {
                     entryName = entryName.substring(0, entryName.length() - 1);
                 }
                 if (entryName.startsWith(localPath) && !entryName.equals(localPath)
                         && entryName.indexOf('/', localPath.length() + 1) < 0) {
-                    result.add(localPath.length() > 0
-                            ? entryName.substring(localPath.length() + 1, entryName.length()) : entryName);
+                    String name = localPath.length() > 0 ? entryName.substring(localPath.length() + 1,
+                            entryName.length()) : entryName;
+                    FilesystemItemType type = isDirectory(entryName) ? FilesystemItemType.DIRECTORY
+                        : (isZipArchive(name) ? FilesystemItemType.ARCHIVE : FilesystemItemType.FILE);
+                    result.add(new FilesystemItem(name, type));
                 }
             }
-            return result.toArray(new String[result.size()]);
+            return result.toArray(new FilesystemItem[result.size()]);
         } catch (IOException e) {
             throw new DirectoryScanException(
                     MessageFormat.format("An error encountered while processing ZIP archive {0}",
@@ -76,5 +79,9 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
                 }
             }
         }
+    }
+
+    private boolean isDirectory(String entryName) {
+        return entryName.charAt(entryName.length() - 1) == '/';
     }
 }

@@ -32,7 +32,15 @@ public class PlainDirectoryScanner extends AbstractDirectoryScanner {
      * {@inheritDoc}
      */
     @Override
-    public String[] scan() throws DirectoryScanException {
-        return currentDirectory.list();
+    public FilesystemItem[] scan() throws DirectoryScanException {
+        File[] listFiles = currentDirectory.listFiles();
+        FilesystemItem[] items = new FilesystemItem[listFiles.length];
+        int i = 0;
+        for (File file : listFiles) {
+            FilesystemItemType type = file.isDirectory() ? FilesystemItemType.DIRECTORY
+                    : (isZipArchive(file.getName()) ? FilesystemItemType.ARCHIVE : FilesystemItemType.FILE);
+            items[i++] = new FilesystemItem(file.getName(), type);
+        }
+        return items;
     }
 }
