@@ -6,9 +6,13 @@
     <servlet>
         <servlet-name>JDirectory Servlet</servlet-name>
         <servlet-class>jdirectory.servlets.JDirectoryServlet</servlet-class>
+        <init-param>
+            <param-name>jdirectory.root.directory.path</param-name>
+            <param-value>e:/</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>JDirectory Servlet</servlet-name>
-        <url-pattern>/jdirectory/*</url-pattern>
+        <url-pattern>/jdir/*</url-pattern>
     </servlet-mapping>
 </web-app>

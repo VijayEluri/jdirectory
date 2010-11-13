@@ -1,8 +1,11 @@
 <jsp:root xmlns:jsp="http://java.sun.com/JSP/Page"
-          xmlns:c="http://java.sun.com/jsp/jstl/core" version="2.1">
+          xmlns:c="http://java.sun.com/jsp/jstl/core"
+          xmlns:jdir="https://github.com/ayurinsky/jdirectory/tags"
+          version="2.1">
     <jsp:directive.page contentType="text/html; charset=UTF-8"/>
     <html xmlns="http://www.w3.org/1999/xhtml">
         <body>
+            <jdir:tree/>
         </body>
     </html>
 </jsp:root>
