@@ -1,6 +1,5 @@
-package jdirectory.tags;
+package jdirectory.core;
 
-import jdirectory.core.FilesystemItem;
 import org.json.simple.JSONAware;
 import org.json.simple.JSONObject;
 
@@ -17,6 +16,7 @@ public class TreeNode implements JSONAware {
     private TreeNode parent;
     private List<TreeNode> children = new ArrayList<TreeNode> ();
     private FilesystemItem item;
+    private boolean expanded;
 
     /**
      * Creates a new instance of {@link TreeNode} with provided title.
@@ -53,6 +53,14 @@ public class TreeNode implements JSONAware {
 
     public FilesystemItem getItem() {
         return item;
+    }
+
+    public boolean isExpanded() {
+        return expanded;
+    }
+
+    public void setExpanded(boolean expanded) {
+        this.expanded = expanded;
     }
 
     /**

@@ -14,6 +14,7 @@ public class JDirectoryRequestBean implements Serializable {
 
     private String paths;
     private String rootDirectoryPath;
+    private String expanded;
 
     public String getPaths() {
         return paths;
@@ -29,6 +30,14 @@ public class JDirectoryRequestBean implements Serializable {
 
     public void setRootDirectoryPath(String rootDirectoryPath) {
         this.rootDirectoryPath = rootDirectoryPath;
+    }
+
+    public String getExpanded() {
+        return expanded;
+    }
+
+    public void setExpanded(String expanded) {
+        this.expanded = expanded;
     }
 
     /**

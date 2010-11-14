@@ -11,7 +11,8 @@ public enum ContextAttribute {
     DIRECTORY_NAME("directoryName"),
     ITEM_ID("id"),
     ITEM_NAME("itemName"),
-    ITEM_TYPE("itemType");
+    ITEM_TYPE("itemType"),
+    DIRECTORY_EXPANDED("expanded");
 
     private String name;
 

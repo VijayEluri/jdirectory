@@ -34,13 +34,16 @@ public class PlainDirectoryScanner extends AbstractDirectoryScanner {
     @Override
     public FilesystemItem[] scan() throws DirectoryScanException {
         File[] listFiles = currentDirectory.listFiles();
-        FilesystemItem[] items = new FilesystemItem[listFiles.length];
-        int i = 0;
-        for (File file : listFiles) {
-            FilesystemItemType type = file.isDirectory() ? FilesystemItemType.DIRECTORY
-                    : getFileTypeByName(file.getName());
-            items[i++] = new FilesystemItem(file.getName(), type);
+        if (listFiles != null) {
+            FilesystemItem[] items = new FilesystemItem[listFiles.length];
+            int i = 0;
+            for (File file : listFiles) {
+                FilesystemItemType type = file.isDirectory() ? FilesystemItemType.DIRECTORY
+                        : getFileTypeByName(file.getName());
+                items[i++] = new FilesystemItem(file.getName(), type);
+            }
+            return items;
         }
-        return items;
+        return new FilesystemItem[0];
     }
 }

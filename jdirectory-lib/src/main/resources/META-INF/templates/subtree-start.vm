@@ -1,7 +1,8 @@
-<table>
+<table #if ($expanded) class="opened-item expanded-item" #end>
     <tbody>
     <tr>
-        <td><a id="$id" href="#" class="tree-directory">+</a></td>
+        <td><a id="$id" href="#" class="tree-directory">#if ($expanded) - #else + #end</a></td>
+        <td><div class="#if ($itemType == 'DIRECTORY') dir-symbol #else archive-symbol #end">&nbsp;</div></td>
         <td>$directoryName</td>
     </tr>
     </tbody>

@@ -18,4 +18,13 @@ public class ActionException extends Exception {
     public ActionException(String message, Throwable cause) {
         super(message, cause);
     }
+
+    /**
+     * Constructs a new exception with the specified detail message.
+     *
+     * @param  message The detail message.
+     */
+    public ActionException(String message) {
+        super(message);
+    }
 }

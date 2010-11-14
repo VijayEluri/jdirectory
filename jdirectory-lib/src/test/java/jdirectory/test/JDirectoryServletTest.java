@@ -24,7 +24,7 @@ public class JDirectoryServletTest {
     @Test
     public void testPlainDirectory() throws Exception {
         FakeResponse response = new FakeResponse();
-        servlet.service(new FakeRequest("/"), response);
+        servlet.service(new FakeRequest("/", servlet.getServletContext()), response);
         Assert.assertEquals(response.toString(),
                 "{\"response\":{\"\\/\":[{\"name\":\"archive.zip\",\"type\":\"ARCHIVE\"}," +
                                         "{\"name\":\"baz.png\",\"type\":\"PICTURE\"}," +
@@ -35,7 +35,7 @@ public class JDirectoryServletTest {
     @Test
     public void testZipArchive() throws Exception {
         FakeResponse response = new FakeResponse();
-        servlet.service(new FakeRequest("/archive.zip!"), response);
+        servlet.service(new FakeRequest("/archive.zip!", servlet.getServletContext()), response);
         Assert.assertEquals(response.toString(),
                 "{\"response\":{\"\\/archive.zip!\":[{\"name\":\"baz.png\",\"type\":\"PICTURE\"}," +
                                                     "{\"name\":\"foo.txt\",\"type\":\"FILE\"}," +

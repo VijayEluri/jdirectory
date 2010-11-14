@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="f14e920c-ef39-4c95-8fb6-a9a893dfe046" name="Default" comment="" />
-    <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
+    <ignored path="$USER_HOME_GRAILS$/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,16 +63,16 @@
       <file leaf-file-name="JDirectoryTreeTag.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/tags/JDirectoryTreeTag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="50" selection-start="2009" selection-end="2009" vertical-scroll-proportion="0.0">
+            <state line="67" column="35" selection-start="2227" selection-end="2227" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jdirectory.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/resources/js/jdirectory.js">
+      <file leaf-file-name="TreeNode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="30" selection-start="3068" selection-end="3068" vertical-scroll-proportion="0.6283619">
+            <state line="57" column="33" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -81,27 +81,43 @@
       <file leaf-file-name="JDirectoryServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/servlets/JDirectoryServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="13" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+            <state line="66" column="0" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Converter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/Converter.java">
+      <file leaf-file-name="JDirectoryAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/actions/JDirectoryAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="10" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="40" column="0" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jdirectory-web/src/main/webapp/css/style.css">
+      <file leaf-file-name="PlainDirectoryScanner.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/PlainDirectoryScanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="41" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+            <state line="37" column="22" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.5819071">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JDirectoryRequestBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/beans/JDirectoryRequestBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectoryScannerFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScannerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="0" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,22 +133,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/UnsupportedScanTarget.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScannerFactory.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/tags/JDirectoryTreeTag.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/UnsupportedScanTargetException.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/actions/JDirectoryAction.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/FilesystemItemType.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/PlainDirectoryScanner.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/ZipArchiveScanner.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/resources/META-INF/templates/tree-item.vm" />
-        <option value="$PROJECT_DIR$/jdirectory-web/src/main/webapp/css/style.css" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/AbstractDirectoryScanner.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/JDirectoryServletTest.java" />
-        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/servlets/JDirectoryServlet.java" />
         <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/Converter.java" />
         <option value="$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeResponse.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/actions/ActionException.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/Constants.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/servlets/JDirectoryServlet.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/TreeNode.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/tags/ContextAttribute.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/resources/META-INF/templates/subtree-start.vm" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/tags/JDirectoryTreeTag.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/beans/JDirectoryRequestBean.java" />
         <option value="$PROJECT_DIR$/jdirectory-lib/src/main/resources/js/jdirectory.js" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeRequest.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/JDirectoryServletTest.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeSession.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/actions/JDirectoryAction.java" />
+        <option value="$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/PlainDirectoryScanner.java" />
       </list>
     </option>
   </component>
@@ -540,6 +556,10 @@
               <option name="myItemId" value="jdirectory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -672,6 +692,36 @@
               <option name="myItemId" value="jdirectory" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory-lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jdirectory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="actions" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -679,9 +729,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Favorites" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -696,15 +746,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="jdirectory.core" />
       <recent name="jdirectory.tags" />
       <recent name="jdirectory.actions" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="jdirectory.core" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\workspace\jdirectory\jdirectory-web\src\main\webapp\css" />
@@ -996,118 +1049,116 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/PlainDirectoryScanner.java">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/resources/META-INF/templates/subtree-start.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.5819071">
+        <state line="3" column="86" selection-start="170" selection-end="170" vertical-scroll-proportion="-2.1111112">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/FilesystemItemType.java">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/resources/js/jdirectory.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+        <state line="86" column="53" selection-start="3260" selection-end="3260" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/resources/META-INF/templates/tree-item.vm">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/tags/JDirectoryTreeTag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="82" selection-start="145" selection-end="145" vertical-scroll-proportion="-2.8148148">
+        <state line="67" column="35" selection-start="2227" selection-end="2227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-web/src/main/webapp/css/style.css">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeRequest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="41" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
+        <state line="22" column="21" selection-start="647" selection-end="647" vertical-scroll-proportion="0.2375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/velocity/velocity-dep/1.4/velocity-dep-1.4.jar!/org/apache/velocity/test/VelocityServletTest.class">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="32" selection-start="4101" selection-end="4101" vertical-scroll-proportion="0.3324573">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/ServletContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="0" selection-start="5685" selection-end="5685" vertical-scroll-proportion="0.45080948">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/AbstractDirectoryScanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="69" selection-start="1255" selection-end="1255" vertical-scroll-proportion="0.2799511">
+        <state line="66" column="79" selection-start="1642" selection-end="1642" vertical-scroll-proportion="1.54375">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/tags/JDirectoryTreeTag.java">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="50" selection-start="2009" selection-end="2009" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/ServletResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="16" selection-start="8382" selection-end="8382" vertical-scroll-proportion="0.79706603">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/servlets/JDirectoryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="365" selection-end="365" vertical-scroll-proportion="0.21375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/SimpleJDirectoryServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="499" selection-end="499" vertical-scroll-proportion="0.20904645">
+        <state line="22" column="36" selection-start="676" selection-end="676" vertical-scroll-proportion="0.301956">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/io/PrintWriter.java">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeServletContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.33251834">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/FakeResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="39" selection-start="2205" selection-end="2205" vertical-scroll-proportion="0.34841076">
+        <state line="116" column="28" selection-start="2352" selection-end="2352" vertical-scroll-proportion="2.3459659">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/test/java/jdirectory/test/JDirectoryServletTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="435" selection-end="435" vertical-scroll-proportion="0.32518336">
+        <state line="15" column="19" selection-start="320" selection-end="320" vertical-scroll-proportion="0.23227383">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/util/Converter.java">
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="10" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="57" column="33" selection-start="1408" selection-end="1408" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/resources/js/jdirectory.js">
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/io/File.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="30" selection-start="3068" selection-end="3068" vertical-scroll-proportion="0.6283619">
+        <state line="1049" column="18" selection-start="43244" selection-end="43244" vertical-scroll-proportion="0.76363635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/actions/JDirectoryAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="0" selection-start="1730" selection-end="1730" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/servlets/JDirectoryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/DirectoryScannerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/beans/JDirectoryRequestBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jdirectory-lib/src/main/java/jdirectory/core/PlainDirectoryScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="22" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.5819071">
           <folding />
         </state>
       </provider>

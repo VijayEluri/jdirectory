@@ -51,7 +51,7 @@ jQuery.createItemElement = function(node) {
                 .attr('href', '#')
                 .text('+')
                 .click($.requestTreeNode)))
-           .append($('<td>').append($('<div>')
+                .append($('<td>').append($('<div>')
                 .addClass($.registeredItemTypes[node.item.type].style)
                 .html('&nbsp;')));
     }
@@ -81,25 +81,26 @@ jQuery.requestTreeNode = function(e) {
         }
     });
     var tableElement = $(this).parentsUntil("table").last().parent();
-    if (!tableElement.hasClass('opened-item')) {
-        $.ajax({
-            url: jdirServletPath,
-            data: {paths : pathParameter},
-            dataType: 'json',
-            type: 'POST',
-            success: function(data) {
-                if (data.response == 'unsupported') {
-                    alert('Expanding this type of archive is unsupported');
-                } else {
-                    $.addSubTree(node, data.response[pathParameter]);
-                    $.expandTreeNode(node, tableElement);
+    $.ajax({
+        url: jdirServletPath,
+        data: tableElement.hasClass('opened-item')
+                ? {paths : pathParameter, expanded: !tableElement.hasClass('expanded-item') + ""}
+                : {paths : pathParameter},
+        dataType: 'json',
+        type: 'POST',
+        success: function(data) {
+            if (data.response == 'unsupported') {
+                alert('Expanding this type of archive is unsupported');
+            } else {
+                var responseObjectArray = data.response[pathParameter];
+                if (responseObjectArray != null) {
+                    $.addSubTree(node, responseObjectArray);
                 }
+                $.expandTreeNode(node, tableElement);
             }
-        });
-        tableElement.addClass('opened-item');
-    } else {
-        $.expandTreeNode(node, tableElement);
-    }
+        }
+    });
+    tableElement.addClass('opened-item');
     e.preventDefault();
     return false;
 };

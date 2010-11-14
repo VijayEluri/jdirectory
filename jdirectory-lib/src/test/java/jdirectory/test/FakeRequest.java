@@ -1,6 +1,7 @@
 package jdirectory.test;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletInputStream;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -20,9 +21,11 @@ import java.util.Map;
  */
 public class FakeRequest implements HttpServletRequest {
     private String paths;
+    private FakeSession session;
 
-    public FakeRequest(String paths) {
+    public FakeRequest(String paths, ServletContext context) throws Exception {
         this.paths = paths;
+        this.session = new FakeSession(context);
     }
 
     @Override
@@ -127,7 +130,7 @@ public class FakeRequest implements HttpServletRequest {
 
     @Override
     public HttpSession getSession() {
-        return null;
+        return session;
     }
 
     @Override

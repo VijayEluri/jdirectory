@@ -59,20 +59,25 @@ public class JDirectoryTreeTag extends TagSupport {
      * Creates initial filesystem tree.
      */
     private TreeNode createTree() throws DirectoryScanException {
+        TreeNode root = (TreeNode) pageContext.getSession().getAttribute(Constants.CURRENT_TREE_NODE_ATTRIBUTE);
+        if (root != null) {
+            return root;
+        }
         String rootDirectory = pageContext.getServletContext().getInitParameter(
                 Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER);
         FilesystemItem[] items;
         try {
-            items = DirectoryScannerFactory.getInstance()
-                    .getScanner(rootDirectory, "/").scan();
+            items = DirectoryScannerFactory.getInstance().getScanner(rootDirectory, "/").scan();
         } catch (UnsupportedScanTargetException e) {
             throw new DirectoryScanException("Root directory path points to the filesystem" +
                     "item which is not supported: " + rootDirectory, e);
         }
-        TreeNode root = new TreeNode(new FilesystemItem("/", FilesystemItemType.DIRECTORY), null);
+        root = new TreeNode(new FilesystemItem("/", FilesystemItemType.DIRECTORY), null);
+        root.setExpanded(true);
         for (FilesystemItem item : items) {
             root.addChild(new TreeNode(item, root));
         }
+        pageContext.getSession().setAttribute(Constants.CURRENT_TREE_NODE_ATTRIBUTE, root);
         return root;
     }
 
@@ -91,8 +96,10 @@ public class JDirectoryTreeTag extends TagSupport {
     private void displayNode(TreeNode node) throws Exception {
         Context context = new VelocityContext();
         context.put(ContextAttribute.ITEM_ID.getName(), node.getId());
-        if (node.getChildren().size() > 0) {
+        context.put(ContextAttribute.ITEM_TYPE.getName(), node.getItem().getType().name());
+        if (node.getChildren().size() > 0 && node.isExpanded()) {
             context.put(ContextAttribute.DIRECTORY_NAME.getName(), node.getItem().getName());
+            context.put(ContextAttribute.DIRECTORY_EXPANDED.getName(), node.isExpanded());
             writeTemplate(context, TemplateFile.SUB_TREE_START);
             for (TreeNode child : node.getChildren()) {
                 displayNode(child);
@@ -100,7 +107,6 @@ public class JDirectoryTreeTag extends TagSupport {
             writeTemplate(context, TemplateFile.SUB_TREE_END);
         } else {
             context.put(ContextAttribute.ITEM_NAME.getName(), node.getItem().getName());
-            context.put(ContextAttribute.ITEM_TYPE.getName(), node.getItem().getType().name());
             writeTemplate(context, TemplateFile.TREE_ITEM);
         }
     }

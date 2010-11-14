@@ -3,6 +3,7 @@ package jdirectory.servlets;
 import jdirectory.actions.JDirectoryAction;
 import jdirectory.beans.JDirectoryRequestBean;
 import jdirectory.beans.JDirectoryResponseBean;
+import jdirectory.core.TreeNode;
 import jdirectory.core.UnsupportedScanTargetException;
 import jdirectory.util.Constants;
 import jdirectory.util.Converter;
@@ -61,7 +62,8 @@ public class JDirectoryServlet extends HttpServlet {
             writer = response.getWriter();
             try {
                 JDirectoryAction action = new JDirectoryAction();
-                JDirectoryResponseBean responseBean = action.perform(requestBean);
+                JDirectoryResponseBean responseBean = action.perform(requestBean,
+                        (TreeNode) request.getSession().getAttribute(Constants.CURRENT_TREE_NODE_ATTRIBUTE));
                 Converter.getInstance().generateJSONResponse(responseBean, writer);
             } catch (UnsupportedScanTargetException e) {
                 JSONObject jsonObj = new JSONObject();
