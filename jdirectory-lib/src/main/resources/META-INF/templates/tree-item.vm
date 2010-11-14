@@ -1,7 +1,7 @@
 <table>
     <tbody>
     <tr>
-        #if ($itemType == "FILE")
+        #if ($itemType == "FILE" || $itemType == "PICTURE")
             <td><div class="#if ($itemType == 'PICTURE') picture-symbol #else file-symbol #end">&nbsp;</div></td>
         #else
             <td><a id="$id" href="#" class="tree-directory">+</a></td>

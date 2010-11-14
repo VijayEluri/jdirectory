@@ -60,14 +60,12 @@ jQuery.createItemElement = function(node) {
 };
 
 jQuery.expandTreeNode = function(node, parentTable) {
-    if (node.children.length > 0) {
-        if (parentTable.hasClass('expanded-item')) {
-            parentTable.removeClass('expanded-item').next().hide();
-            $('#' + node.id).text('+');
-        } else {
-            parentTable.addClass('expanded-item').next().show();
-            $('#' + node.id).text('-');
-        }
+    if (parentTable.hasClass('expanded-item')) {
+        parentTable.removeClass('expanded-item').next().hide();
+        $('#' + node.id).text('+');
+    } else {
+        parentTable.addClass('expanded-item').next().show();
+        $('#' + node.id).text('-');
     }
 };
 
