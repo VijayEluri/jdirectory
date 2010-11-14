@@ -6,5 +6,5 @@ package jdirectory.core;
  * @author Alexander Yurinsky
  */
 public enum FilesystemItemType {
-    FILE, DIRECTORY, ARCHIVE
+    FILE, PICTURE, DIRECTORY, ARCHIVE
 }

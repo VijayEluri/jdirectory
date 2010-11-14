@@ -40,6 +40,9 @@ public class FilesystemItem implements Comparable<FilesystemItem>, JSONAware {
         return this.getName().compareTo(o.getName());
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     @SuppressWarnings("unchecked")
     public String toJSONString() {

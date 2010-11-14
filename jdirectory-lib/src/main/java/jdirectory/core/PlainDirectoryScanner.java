@@ -38,7 +38,7 @@ public class PlainDirectoryScanner extends AbstractDirectoryScanner {
         int i = 0;
         for (File file : listFiles) {
             FilesystemItemType type = file.isDirectory() ? FilesystemItemType.DIRECTORY
-                    : (isZipArchive(file.getName()) ? FilesystemItemType.ARCHIVE : FilesystemItemType.FILE);
+                    : getFileTypeByName(file.getName());
             items[i++] = new FilesystemItem(file.getName(), type);
         }
         return items;

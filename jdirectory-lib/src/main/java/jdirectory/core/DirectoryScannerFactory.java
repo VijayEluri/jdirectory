@@ -23,8 +23,10 @@ public class DirectoryScannerFactory {
      * @param rootDirectoryPath The path to the root filesystem directory.
      * @param localPath The local path relative to the root filesystem directory.
      * @return An instance of {@link DirectoryScanner}.
+     * @throws UnsupportedScanTargetException If target filesystem item is not supported.
      */
-    public DirectoryScanner getScanner(String rootDirectoryPath, String localPath) {
+    public DirectoryScanner getScanner(String rootDirectoryPath,
+                                       String localPath) throws UnsupportedScanTargetException {
         if (localPath.length() > 0) {
             int wowIdx =  localPath.indexOf('!');
             return wowIdx >= 0

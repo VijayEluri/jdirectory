@@ -113,7 +113,13 @@ public class FakeServletContext implements ServletContext {
 
     @Override
     public String getInitParameter(String name) {
-        return name.equals(Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER) ? rootDirectoryPath : null;
+        if (name.equals(Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER)) {
+            return rootDirectoryPath;
+        }
+        if (name.equals(Constants.JDIRECTORY_SERVLET_PATH_PARAMETER)) {
+            return "/jdir";
+        }
+        return null;
     }
 
     @Override

@@ -111,17 +111,12 @@ public class FakeResponse implements HttpServletResponse {
 
     @Override
     public ServletOutputStream getOutputStream() throws IOException {
-        return new ServletOutputStream() {
-            @Override
-            public void write(int b) throws IOException {
-                response.write(b); 
-            }
-        };
+        return null;
     }
 
     @Override
     public PrintWriter getWriter() throws IOException {
-        return null;
+        return new PrintWriter(response);
     }
 
     @Override

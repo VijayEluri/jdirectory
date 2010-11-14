@@ -1,9 +1,9 @@
-<div>
-    <table>
-        <tbody>
-            <tr>
-                <td><a href="#">+</a></td>
-                <td>$directoryName</td>
-            </tr>
-        </tbody>
-    </table>
+<table>
+    <tbody>
+    <tr>
+        <td><a id="$id" href="#" class="tree-directory">+</a></td>
+        <td>$directoryName</td>
+    </tr>
+    </tbody>
+</table>
+<div class="sub-tree">

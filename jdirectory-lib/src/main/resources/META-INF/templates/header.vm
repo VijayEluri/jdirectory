@@ -1,0 +1,5 @@
+<script type="text/javascript" src="$jdirServletPath/resource/js/jdirectory.js"></script>
+<script type="text/javascript">
+    var jdirServletPath = "$jdirServletPath";
+    var jdirTree = $jdirTree;
+</script>

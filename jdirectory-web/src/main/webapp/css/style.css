@@ -1,0 +1,32 @@
+* {
+    font-family: 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif;
+    font-size: 10pt;
+}
+.sub-tree {
+    padding-left: 26px;
+}
+.dir-symbol {
+    width: 20px;
+    height: 16px;
+    background-image: url("../img/folder.png");
+}
+.archive-symbol {
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/archive.png");
+}
+.file-symbol {
+    width: 17px;
+    height: 20px;
+    background-image: url("../img/file.png");
+}
+.picture-symbol {
+    width: 18px;
+    height: 15px;
+    background-image: url("../img/picture.png");
+}
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: black;
+    font-size: 14pt;
+}

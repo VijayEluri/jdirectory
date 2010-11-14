@@ -2,12 +2,12 @@ package jdirectory.util;
 
 import org.json.simple.JSONObject;
 
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 import java.io.Serializable;
+import java.io.Writer;
 import java.text.MessageFormat;
 
 /**
@@ -63,12 +63,12 @@ public class Converter {
      * Generates JSON response based on properties of the response bean.
      *
      * @param responseBean An instance of response bean.
-     * @param responseStream An instance of servlet output stream.
+     * @param writer An instance of writer.
      * @throws ConversionException If an error encounters while generation.
      */
     @SuppressWarnings("unchecked")
     public void generateJSONResponse(Serializable responseBean,
-                                            ServletOutputStream responseStream) throws ConversionException {
+                                            Writer writer) throws ConversionException {
         JSONObject jsonObj = new JSONObject();
         try {
             BeanInfo info = Introspector.getBeanInfo(responseBean.getClass());
@@ -77,7 +77,7 @@ public class Converter {
                     jsonObj.put(pd.getName(), pd.getReadMethod().invoke(responseBean));
                 }
             }
-            responseStream.print(jsonObj.toJSONString());
+            writer.write(jsonObj.toJSONString());
         } catch (Exception e) {
             throw new ConversionException(MessageFormat.format("An error has encountered while " +
                     "generating response for response bean {0}", responseBean.getClass().getName()), e);

@@ -1,6 +1,8 @@
 package jdirectory.tags;
 
 import jdirectory.core.FilesystemItem;
+import org.json.simple.JSONAware;
+import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +12,8 @@ import java.util.List;
  *
  * @author Alexander Yurinsky
  */
-public class TreeNode {
+public class TreeNode implements JSONAware {
+    private String id;
     private TreeNode parent;
     private List<TreeNode> children = new ArrayList<TreeNode> ();
     private FilesystemItem item;
@@ -19,17 +22,20 @@ public class TreeNode {
      * Creates a new instance of {@link TreeNode} with provided title.
      *
      * @param item An instance of {@link jdirectory.core.FilesystemItem}.
+     * @param parent An instance of parent {@link TreeNode}.
      */
-    public TreeNode(FilesystemItem item) {
+    public TreeNode(FilesystemItem item, TreeNode parent) {
         this.item = item;
+        this.parent = parent;
+        this.id = getParent() != null ? getParent().getId() + "-" + getParent().getChildren().size() : "0";
+    }
+
+    public String getId() {
+        return id;
     }
 
     public TreeNode getParent() {
         return parent;
-    }
-
-    public void setParent(TreeNode parent) {
-        this.parent = parent;
     }
 
     /**
@@ -49,7 +55,16 @@ public class TreeNode {
         return item;
     }
 
-    public void setItem(FilesystemItem item) {
-        this.item = item;
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    @SuppressWarnings("unchecked")
+    public String toJSONString() {
+        JSONObject jsonObj = new JSONObject();
+        jsonObj.put("id", id);
+        jsonObj.put("item", item);
+        jsonObj.put("children", children);
+        return jsonObj.toJSONString();
     }
 }

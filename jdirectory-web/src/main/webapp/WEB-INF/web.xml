@@ -15,4 +15,8 @@
         <param-name>jdirectory.root.directory.path</param-name>
         <param-value>e:/</param-value>
     </context-param>
+    <context-param>
+        <param-name>jdirectory.servlet.path</param-name>
+        <param-value>/jdir</param-value>
+    </context-param>
 </web-app>

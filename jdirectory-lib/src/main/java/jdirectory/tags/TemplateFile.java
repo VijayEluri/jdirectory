@@ -6,6 +6,7 @@ package jdirectory.tags;
  * @author Alexander Yurinsky
  */
 public enum TemplateFile {
+    HEADER("header.vm"),
     SUB_TREE_START("subtree-start.vm"),
     SUB_TREE_END("subtree-end.vm"),
     TREE_ITEM("tree-item.vm");

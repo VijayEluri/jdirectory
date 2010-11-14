@@ -24,9 +24,14 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
      * @param rootDirectoryPath The path to the root filesystem directory.
      * @param archivePath The path to archive relative to the root directory.
      * @param localPath The local path relative to the root of archive contents.
+     * @throws UnsupportedScanTargetException If target filesystem item is not supported.
      */
-    public ZipArchiveScanner(String rootDirectoryPath, String archivePath, String localPath) {
+    public ZipArchiveScanner(String rootDirectoryPath, String archivePath,
+                             String localPath) throws UnsupportedScanTargetException {
         super(rootDirectoryPath, localPath);
+        if (archivePath.toLowerCase().endsWith(RAR_FILE_POSTFIX)) {
+            throw new UnsupportedScanTargetException();
+        }
         File archiveFile = new File(rootDirectory, archivePath);
         if (!archiveFile.exists() || !archiveFile.isFile()) {
             throw new IllegalArgumentException("Provided path to archive does not really " +
@@ -60,7 +65,7 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
                     String name = localPath.length() > 0 ? entryName.substring(localPath.length() + 1,
                             entryName.length()) : entryName;
                     FilesystemItemType type = isDirectory(entryName) ? FilesystemItemType.DIRECTORY
-                        : (isZipArchive(name) ? FilesystemItemType.ARCHIVE : FilesystemItemType.FILE);
+                        : getFileTypeByName(name);
                     result.add(new FilesystemItem(name, type));
                 }
             }

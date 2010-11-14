@@ -6,6 +6,7 @@ import org.apache.velocity.runtime.resource.Resource;
 import org.apache.velocity.runtime.resource.loader.ResourceLoader;
 
 import java.io.InputStream;
+import java.net.URL;
 
 /**
  * Represents a custom instance of {@link org.apache.velocity.runtime.resource.loader.ResourceLoader}
@@ -28,8 +29,9 @@ public class CustomResourceLoader extends ResourceLoader {
     @Override
     public InputStream getResourceStream(String name) throws ResourceNotFoundException {
         try {
-            return Thread.currentThread().getContextClassLoader()
-                    .getResource(VELOCITY_TEMPLATES_PATH + "/" + name).openStream();
+            URL resource = Thread.currentThread().getContextClassLoader()
+                    .getResource(VELOCITY_TEMPLATES_PATH + "/" + name);
+            return resource != null ? resource.openStream() : null;
         } catch (Exception e) {
             throw new ResourceNotFoundException("Unable to find resource: " + name);
         }

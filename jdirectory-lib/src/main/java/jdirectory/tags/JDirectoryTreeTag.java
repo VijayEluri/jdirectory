@@ -1,14 +1,12 @@
 package jdirectory.tags;
 
-import jdirectory.core.DirectoryScanException;
-import jdirectory.core.DirectoryScannerFactory;
-import jdirectory.core.FilesystemItem;
-import jdirectory.core.FilesystemItemType;
+import jdirectory.core.*;
 import jdirectory.util.Constants;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.context.Context;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.TagSupport;
@@ -39,6 +37,7 @@ public class JDirectoryTreeTag extends TagSupport {
         try {
             initVelocityEngine();
             TreeNode root = createTree();
+            displayHeader(root);
             displayNode(root);
         } catch (Exception e) {
             throw new JspException("Creation filesystem tree has failed", e);
@@ -60,15 +59,30 @@ public class JDirectoryTreeTag extends TagSupport {
      * Creates initial filesystem tree.
      */
     private TreeNode createTree() throws DirectoryScanException {
-        Object rootDirectory = pageContext.getServletContext().getInitParameter(
+        String rootDirectory = pageContext.getServletContext().getInitParameter(
                 Constants.ROOT_DIRECTORY_CONTEXT_PARAMETER);
-        FilesystemItem[] items = DirectoryScannerFactory.getInstance()
-                .getScanner(rootDirectory.toString(), "/").scan();
-        TreeNode root = new TreeNode(new FilesystemItem("", FilesystemItemType.DIRECTORY));
+        FilesystemItem[] items;
+        try {
+            items = DirectoryScannerFactory.getInstance()
+                    .getScanner(rootDirectory, "/").scan();
+        } catch (UnsupportedScanTargetException e) {
+            throw new DirectoryScanException("Root directory path points to the filesystem" +
+                    "item which is not supported: " + rootDirectory, e);
+        }
+        TreeNode root = new TreeNode(new FilesystemItem("/", FilesystemItemType.DIRECTORY), null);
         for (FilesystemItem item : items) {
-            root.addChild(new TreeNode(item));
+            root.addChild(new TreeNode(item, root));
         }
         return root;
+    }
+
+    private void displayHeader(TreeNode node) throws Exception {
+        Context context = new VelocityContext();
+        String contextPath = ((HttpServletRequest) pageContext.getRequest()).getContextPath();
+        context.put(ContextAttribute.JDIR_SERVLET_PATH.getName(), contextPath + 
+                pageContext.getServletContext().getInitParameter(Constants.JDIRECTORY_SERVLET_PATH_PARAMETER));
+        context.put(ContextAttribute.JDIR_TREE.getName(), node.toJSONString());
+        writeTemplate(context, TemplateFile.HEADER);
     }
 
     /*
@@ -76,6 +90,7 @@ public class JDirectoryTreeTag extends TagSupport {
      */
     private void displayNode(TreeNode node) throws Exception {
         Context context = new VelocityContext();
+        context.put(ContextAttribute.ITEM_ID.getName(), node.getId());
         if (node.getChildren().size() > 0) {
             context.put(ContextAttribute.DIRECTORY_NAME.getName(), node.getItem().getName());
             writeTemplate(context, TemplateFile.SUB_TREE_START);
@@ -85,6 +100,7 @@ public class JDirectoryTreeTag extends TagSupport {
             writeTemplate(context, TemplateFile.SUB_TREE_END);
         } else {
             context.put(ContextAttribute.ITEM_NAME.getName(), node.getItem().getName());
+            context.put(ContextAttribute.ITEM_TYPE.getName(), node.getItem().getType().name());
             writeTemplate(context, TemplateFile.TREE_ITEM);
         }
     }

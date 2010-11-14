@@ -3,7 +3,13 @@
           xmlns:jdir="https://github.com/ayurinsky/jdirectory/tags"
           version="2.1">
     <jsp:directive.page contentType="text/html; charset=UTF-8"/>
-    <html xmlns="http://www.w3.org/1999/xhtml">
+    <html>
+        <head>
+            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		    <title>JDirectory tree object</title> 
+            <script type="text/javascript" src="js/jquery-1.4.4.min.js">var a=1</script>
+            <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+        </head>
         <body>
             <jdir:tree/>
         </body>
