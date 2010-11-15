@@ -7,7 +7,7 @@
     <version>1.0</version>
     <name>JDirectory Project</name>
 
-    <repositories>      
+    <repositories>
         <repository>
             <id>central</id>
             <url>http://repo1.maven.org/maven2</url>
@@ -58,16 +58,6 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>taglibs</groupId>
-            <artifactId>standard</artifactId>
-            <version>1.1.2</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.1.2</version>
-        </dependency>
-        <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.14</version>
@@ -86,10 +76,19 @@
                     <debug>true</debug>
                 </configuration>
             </plugin>
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>utf-8</encoding>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
     <modules>
         <module>jdirectory-web</module>
-		<module>jdirectory-lib</module>
+        <module>jdirectory-lib</module>
     </modules>
+    <properties>
+        <jdirectory.root.directory.path>c:/</jdirectory.root.directory.path>
+    </properties>
 </project>

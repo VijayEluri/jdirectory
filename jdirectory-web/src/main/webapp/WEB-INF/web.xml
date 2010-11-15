@@ -13,7 +13,7 @@
     </servlet-mapping>
     <context-param>
         <param-name>jdirectory.root.directory.path</param-name>
-        <param-value>e:/</param-value>
+        <param-value>${jdirectory.root.directory.path}</param-value>
     </context-param>
     <context-param>
         <param-name>jdirectory.servlet.path</param-name>
