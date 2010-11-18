@@ -1,7 +1,6 @@
 package jdirectory.core;
 
 import java.io.File;
-import java.util.Arrays;
 
 /**
  * An abstract directory scanner.
@@ -10,13 +9,6 @@ import java.util.Arrays;
  * @author Alexander Yurinsky
  */
 public abstract class AbstractDirectoryScanner implements DirectoryScanner {
-    private static final String ZIP_FILE_POSTFIX = ".zip";
-    private static final String[] PICTURE_POSTFIXES ={".jpg", ".png", ".gif"};
-
-    static {
-        Arrays.sort(PICTURE_POSTFIXES);
-    }
-    
     /**
      * RAR file extension.
      */
@@ -43,25 +35,5 @@ public abstract class AbstractDirectoryScanner implements DirectoryScanner {
         }
         this.rootDirectory = rootDirectory;
         this.localPath = localPath;
-    }
-
-    /**
-     * Determines the type of the specified file by its extension.
-     *
-     * @param fileName The name of the file.
-     * @return The type of the file according to its extension, default is FILE.
-     */
-    protected FilesystemItemType getFileTypeByName(String fileName) {
-        int pointIdx = fileName.lastIndexOf('.');
-        if (pointIdx >= 0 && pointIdx + 1 < fileName.length()) {
-            String extension = fileName.substring(pointIdx).toLowerCase();
-            if (extension.equals(ZIP_FILE_POSTFIX) || extension.equals(RAR_FILE_POSTFIX)) {
-                return FilesystemItemType.ARCHIVE;
-            }
-            if (Arrays.binarySearch(PICTURE_POSTFIXES, extension) >= 0) {
-                return FilesystemItemType.PICTURE;
-            }
-        }
-        return FilesystemItemType.FILE;
     }
 }

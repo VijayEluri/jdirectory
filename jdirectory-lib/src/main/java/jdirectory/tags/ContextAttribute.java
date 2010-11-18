@@ -8,11 +8,8 @@ package jdirectory.tags;
 public enum ContextAttribute {
     JDIR_SERVLET_PATH("jdirServletPath"),
     JDIR_TREE("jdirTree"),
-    DIRECTORY_NAME("directoryName"),
-    ITEM_ID("id"),
-    ITEM_NAME("itemName"),
-    ITEM_TYPE("itemType"),
-    DIRECTORY_EXPANDED("expanded");
+    NODE_TYPE("nodeType"),
+    NODE("node");
 
     private String name;
 

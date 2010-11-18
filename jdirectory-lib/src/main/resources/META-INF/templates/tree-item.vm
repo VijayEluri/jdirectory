@@ -1,13 +1,13 @@
 <table>
     <tbody>
     <tr>
-        #if ($itemType == "FILE" || $itemType == "PICTURE")
-            <td><div class="#if ($itemType == 'PICTURE') picture-symbol #else file-symbol #end">&nbsp;</div></td>
+        #if ($nodeType == 'FILE' || $nodeType == 'PICTURE')
+            <td><div class="$node.item.type.cssClass">&nbsp;</div></td>
         #else
-            <td><a id="$id" href="#" class="tree-directory">+</a></td>
-            <td><div class="#if ($itemType == 'DIRECTORY') dir-symbol #else archive-symbol #end">&nbsp;</div></td>
+            <td><a id="$node.id" href="#" class="tree-directory">+</a></td>
+            <td><div class="$node.item.type.cssClass">&nbsp;</div></td>
         #end
-        <td>$itemName</td>
+        <td>$node.item.name</td>
     </tr>
     </tbody>
 </table>

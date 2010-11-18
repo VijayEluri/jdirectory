@@ -29,7 +29,7 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
     public ZipArchiveScanner(String rootDirectoryPath, String archivePath,
                              String localPath) throws UnsupportedScanTargetException {
         super(rootDirectoryPath, localPath);
-        if (archivePath.toLowerCase().endsWith(RAR_FILE_POSTFIX)) {
+        if (archivePath.toLowerCase().endsWith(RAR_FILE_POSTFIX) || localPath.indexOf('!') >= 0) {
             throw new UnsupportedScanTargetException();
         }
         File archiveFile = new File(rootDirectory, archivePath);
@@ -38,9 +38,11 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
                     "point to a ZIP archive: " + archiveFile.getAbsolutePath());
         }
         this.archiveFile = archiveFile;
-        char lastChar = this.localPath.length() > 0 ? this.localPath.charAt(this.localPath.length() - 1) : 0;
-        if (lastChar == '/' || lastChar == '\\') {
-            this.localPath = this.localPath.substring(0, this.localPath.length() - 1);
+        if (this.localPath.length() > 0) {
+            char lastChar = this.localPath.charAt(this.localPath.length() - 1);
+            int endIdx = (lastChar == '/' || lastChar == '\\') ? this.localPath.length() - 1
+                    : this.localPath.length();
+            this.localPath = this.localPath.substring(1, endIdx);
         }
     }
 
@@ -57,15 +59,16 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
             Enumeration<? extends ZipEntry> entries = archive.entries();
             for (; entries.hasMoreElements();) {
                 String entryName = entries.nextElement().getName();
-                if (isDirectory(entryName)) {
+                boolean isDirectory = isDirectory(entryName);
+                if (isDirectory) {
                     entryName = entryName.substring(0, entryName.length() - 1);
                 }
                 if (entryName.startsWith(localPath) && !entryName.equals(localPath)
                         && entryName.indexOf('/', localPath.length() + 1) < 0) {
                     String name = localPath.length() > 0 ? entryName.substring(localPath.length() + 1,
                             entryName.length()) : entryName;
-                    FilesystemItemType type = isDirectory(entryName) ? FilesystemItemType.DIRECTORY
-                        : getFileTypeByName(name);
+                    FilesystemItemType type = isDirectory ? FilesystemItemType.DIRECTORY
+                        : FilesystemItemType.byName(name);
                     result.add(new FilesystemItem(name, type));
                 }
             }

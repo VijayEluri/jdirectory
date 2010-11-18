@@ -89,6 +89,6 @@
         <module>jdirectory-lib</module>
     </modules>
     <properties>
-        <jdirectory.root.directory.path>c:/</jdirectory.root.directory.path>
+        <jdirectory.root.directory.path>e:/</jdirectory.root.directory.path>
     </properties>
 </project>

@@ -95,18 +95,15 @@ public class JDirectoryTreeTag extends TagSupport {
      */
     private void displayNode(TreeNode node) throws Exception {
         Context context = new VelocityContext();
-        context.put(ContextAttribute.ITEM_ID.getName(), node.getId());
-        context.put(ContextAttribute.ITEM_TYPE.getName(), node.getItem().getType().name());
+        context.put(ContextAttribute.NODE.getName(), node);
+        context.put(ContextAttribute.NODE_TYPE.getName(), node.getItem().getType().name());
         if (node.getChildren().size() > 0 && node.isExpanded()) {
-            context.put(ContextAttribute.DIRECTORY_NAME.getName(), node.getItem().getName());
-            context.put(ContextAttribute.DIRECTORY_EXPANDED.getName(), node.isExpanded());
             writeTemplate(context, TemplateFile.SUB_TREE_START);
             for (TreeNode child : node.getChildren()) {
                 displayNode(child);
             }
             writeTemplate(context, TemplateFile.SUB_TREE_END);
         } else {
-            context.put(ContextAttribute.ITEM_NAME.getName(), node.getItem().getName());
             writeTemplate(context, TemplateFile.TREE_ITEM);
         }
     }

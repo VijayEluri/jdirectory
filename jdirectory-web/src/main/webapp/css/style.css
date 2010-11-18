@@ -25,6 +25,11 @@
     height: 15px;
     background-image: url("../img/picture.png");
 }
+.jar-symbol {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/jar.png");
+}
 a, a:hover, a:visited {
     text-decoration: none;
     color: black;

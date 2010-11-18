@@ -39,7 +39,7 @@ public class PlainDirectoryScanner extends AbstractDirectoryScanner {
             int i = 0;
             for (File file : listFiles) {
                 FilesystemItemType type = file.isDirectory() ? FilesystemItemType.DIRECTORY
-                        : getFileTypeByName(file.getName());
+                        : FilesystemItemType.byName(file.getName());
                 items[i++] = new FilesystemItem(file.getName(), type);
             }
             return items;

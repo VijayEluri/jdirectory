@@ -37,6 +37,7 @@ $.registeredItemTypes['PICTURE'] = {style: 'picture-symbol', expanded: false};
 $.registeredItemTypes['DIRECTORY'] = {style: 'dir-symbol', expanded: true};
 $.registeredItemTypes['FILE'] = {style: 'file-symbol', expanded: false};
 $.registeredItemTypes['ARCHIVE'] = {style: 'archive-symbol', expanded: true};
+$.registeredItemTypes['JAR'] = {style: 'jar-symbol', expanded: true};
 
 jQuery.createItemElement = function(node) {
     var row = $('<tr>');
@@ -60,12 +61,14 @@ jQuery.createItemElement = function(node) {
 };
 
 jQuery.expandTreeNode = function(node, parentTable) {
-    if (parentTable.hasClass('expanded-item')) {
-        parentTable.removeClass('expanded-item').next().hide();
-        $('#' + node.id).text('+');
-    } else {
-        parentTable.addClass('expanded-item').next().show();
-        $('#' + node.id).text('-');
+    if (parentTable.hasClass('opened-item')) {
+        if (parentTable.hasClass('expanded-item')) {
+            parentTable.removeClass('expanded-item').next().hide();
+            $('#' + node.id).text('+');
+        } else {
+            parentTable.addClass('expanded-item').next().show();
+            $('#' + node.id).text('-');
+        }
     }
 };
 
@@ -74,7 +77,7 @@ jQuery.requestTreeNode = function(e) {
     var pathParameter = "";
     var node = $.nodeSearcher.searchNode(nodeId, function(currentNode) {
         pathParameter += '/' + currentNode.item.name;
-        if (currentNode.item.type == 'ARCHIVE') {
+        if (currentNode.item.type == 'ARCHIVE' || currentNode.item.type == 'JAR') {
             pathParameter += '!';
         }
     });
@@ -88,17 +91,17 @@ jQuery.requestTreeNode = function(e) {
         type: 'POST',
         success: function(data) {
             if (data.response == 'unsupported') {
-                alert('Expanding this type of archive is unsupported');
+                alert('Expanding RAR archives and inner ZIP(JAR) archives is unsupported');
             } else {
                 var responseObjectArray = data.response[pathParameter];
                 if (responseObjectArray != null) {
                     $.addSubTree(node, responseObjectArray);
+                    tableElement.addClass('opened-item');
                 }
                 $.expandTreeNode(node, tableElement);
             }
         }
     });
-    tableElement.addClass('opened-item');
     e.preventDefault();
     return false;
 };

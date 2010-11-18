@@ -1,9 +1,9 @@
-<table #if ($expanded) class="opened-item expanded-item" #end>
+<table #if ($node.expanded) class="opened-item expanded-item" #end>
     <tbody>
     <tr>
-        <td><a id="$id" href="#" class="tree-directory">#if ($expanded) - #else + #end</a></td>
-        <td><div class="#if ($itemType == 'DIRECTORY') dir-symbol #else archive-symbol #end">&nbsp;</div></td>
-        <td>$directoryName</td>
+        <td><a id="$node.id" href="#" class="tree-directory">#if ($node.expanded) - #else + #end</a></td>
+        <td><div class="$node.item.type.cssClass">&nbsp;</div></td>
+        <td>$node.item.name</td>
     </tr>
     </tbody>
 </table>
