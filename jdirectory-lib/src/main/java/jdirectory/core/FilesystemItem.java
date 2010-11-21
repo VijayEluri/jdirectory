@@ -40,6 +40,26 @@ public class FilesystemItem implements Comparable<FilesystemItem>, JSONAware {
         return this.getName().compareTo(o.getName());
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        FilesystemItem that = (FilesystemItem) o;
+
+        if (name != null ? !name.equals(that.name) : that.name != null) return false;
+        if (type == that.type) return true;
+        else return false;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + type.hashCode();
+        return result;
+    }
+
     /**
      * {@inheritDoc}
      */

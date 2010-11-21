@@ -63,10 +63,15 @@ public class ZipArchiveScanner extends AbstractDirectoryScanner {
                 if (isDirectory) {
                     entryName = entryName.substring(0, entryName.length() - 1);
                 }
-                if (entryName.startsWith(localPath) && !entryName.equals(localPath)
-                        && entryName.indexOf('/', localPath.length() + 1) < 0) {
-                    String name = localPath.length() > 0 ? entryName.substring(localPath.length() + 1,
-                            entryName.length()) : entryName;
+                if (entryName.startsWith(localPath) && !entryName.equals(localPath)) {
+                    int startIdx = localPath.length() > 0 ? localPath.length() + 1 : localPath.length();
+                    int endIdx = entryName.indexOf('/', localPath.length() + 1);
+                    if (endIdx >= 0) {
+                        isDirectory = true;
+                    } else {
+                        endIdx = entryName.length();
+                    }
+                    String name = entryName.substring(startIdx, endIdx);
                     FilesystemItemType type = isDirectory ? FilesystemItemType.DIRECTORY
                         : FilesystemItemType.byName(name);
                     result.add(new FilesystemItem(name, type));
