@@ -72,7 +72,23 @@ jQuery.expandTreeNode = function(node, parentTable) {
     }
 };
 
+jQuery.animateTreeNode = function(cellNode, originalLabel, animationProperties) {
+    jQuery.fx.interval = 500;
+    cellNode.animate({left: '0'}, {duration: 30000, step: function() {
+        var label = cellNode.text();
+        cellNode.text((label.length > 3 && label.substring(label.length - 3) == '...')
+                ? label.substring(0, label.length - 3) : label + '.');
+    }});
+};
+
 jQuery.requestTreeNode = function(e) {
+    // Animation and disabling clicking
+    var cellNode = $(this).parent().next().next();
+    var originalLabel = cellNode.text();
+    $(this).unbind('click');
+    $.animateTreeNode(cellNode);
+
+    // Initialization
     var nodeId = $(this).attr('id');
     var pathParameter = "";
     var node = $.nodeSearcher.searchNode(nodeId, function(currentNode) {
@@ -82,6 +98,9 @@ jQuery.requestTreeNode = function(e) {
         }
     });
     var tableElement = $(this).parentsUntil("table").last().parent();
+    var thisElement = $(this);
+
+    //Ajax call
     $.ajax({
         url: jdirServletPath,
         data: tableElement.hasClass('opened-item')
@@ -90,8 +109,10 @@ jQuery.requestTreeNode = function(e) {
         dataType: 'json',
         type: 'POST',
         success: function(data) {
+            cellNode.stop();
+            cellNode.text(originalLabel);
             if (data.response == 'unsupported') {
-                alert('Expanding RAR archives and inner ZIP(JAR) archives is unsupported');
+                alert('Expanding RAR archives is unsupported');
             } else {
                 var responseObjectArray = data.response[pathParameter];
                 if (responseObjectArray != null) {
@@ -100,8 +121,10 @@ jQuery.requestTreeNode = function(e) {
                 }
                 $.expandTreeNode(node, tableElement);
             }
+            thisElement.bind('click', $.requestTreeNode);
         }
     });
+    
     e.preventDefault();
     return false;
 };
